@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: black;
+            color: rgb(0, 0, 0);
+        }
+
+        .login-form {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: auto;
+            max-width: 400px;
+
+        }
+
+        .login-form h2 {
+            text-align: center;
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"],
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .login-form .options {
+            align-items: center;
+        }
+
+        .login-form .options a {
+            color: orange;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .login-form a {
+            text-decoration: none;
+        }
+
+        .cross-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        button{
+            width: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-form">
+        <h2>Login Form</h2>
+        <form action="submit_booking.php" method="post">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <button><a href="index.html">Login</a></button>
+
+            <div class="options">
+                <p><input type="checkbox" id="remember-me-checkbox"> <label for="remember-me-checkbox">Remember
+                        Me</label></p>
+                <p>Forget Password? <a href="">Click Here</a></p>
+                <p>Don't have an account? <a href="index.html">Register Now</a></p>
+            </div>
+        </form>
+        <a href="index.html" class="cross-btn" target="_blank"><i class="ri-close-circle-fill"></i></a>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* header section */
+header {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-width: 15%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.9s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: orange;
+}
+.formLogo{
+    font-size: 40px;
+}
+
+/* home section */
+.home {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.home-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    transition: all ease 0.3s;
+}
+
+.home-button:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+}
+
+/* destination section */
+#destinations {
+    padding-top: 40px;
+}
+
+#destinations h1 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+
+}
+
+#destinations img {
+    height: 380px;
+}
+
+#destinations .col-md-4:hover {
+    transition: ease 0.6s;
+    transform: translateY(-5px);
+}
+
+/* hotels section */
+#hotels {
+    padding-top: 40px;
+}
+
+
+#hotels h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#hotels img {
+    height: 380px;
+}
+
+#hotels .col-md-4:hover {
+    transition: ease 0.6s;
+    transform: translateY(-5px);
+}
+
+
+/* activity section */
+#activities {
+    padding-top: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#activities h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#activities .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#activities .row {
+    margin-bottom: 20px;
+}
+
+#activities img {
+    display: block;
+    margin: 0 auto;
+    height: 450px;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#activities img:hover {
+    transition: ease 0.6s;
+    transform: translateY(-5px);
+}
+
+
+
+/* contact section */
+#contact {
+    padding-top: 40px;
+    background: beige;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact button {
+    /* position: relative; */
+    background-color: orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+}
