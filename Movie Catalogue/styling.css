@@ -1,0 +1,247 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Default font stack */
+}
+
+/* Body styles */
+body {
+  height: 100vh; /* Set body height to viewport height */
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  ); /* Radial gradient background */
+}
+
+/* Welcome message styles */
+.welcome {
+  text-align: center; /* Center text */
+  margin-top: 100px; /* Add top margin */
+  /* Styling for animation is commented out */
+}
+
+/* Element styles */
+#element {
+  color: rgb(245, 221,8); /* Set text color */
+  font-size: 50px; /* Set font size */
+  font-family: "Poppins", sans-serif; /* Use Google Font */
+}
+
+/* Container styles */
+.container {
+  font-size: 18px; /* Set font size */
+  width: 90%; /* Set container width */
+  max-width: 900px; /* Set maximum container width */
+  padding: 48px; /* Add padding */
+  background-color: #333; /* Set background color */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Align container vertically */
+  left: 50%; /* Align container horizontally */
+  transform: translate(-50%, -50%); /* Center container */
+  border-radius: 10px; /* Apply border radius */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  animation: box 4s 1; /* Apply animation */
+}
+
+/* Animation keyframes */
+@keyframes box {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    opacity: 100%; /* End with opacity 100 */
+  }
+}
+
+/* Search container styles */
+.search-container {
+  display: flex; /* Display as flex container */
+  gap: 10px; /* Set gap between items */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+/* Input and button styles within search container */
+.search-container input,
+.search-container button {
+  font-size: 16px; /* Set font size */
+  outline: none; /* Remove outline */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Apply border radius */
+  padding: 10px; /* Add padding */
+}
+
+/* Input styles within search container */
+.search-container input {
+  background-color: #555; /* Set background color */
+  color: #fff; /* Set text color */
+  flex: 1; /* Allow input to grow */
+}
+
+/* Focus styles for input within search container */
+.search-container input:focus {
+  border-color: #fff; /* Change border color on focus */
+}
+
+/* Button styles within search container */
+.search-container button {
+  background-color: #f9bc60; /* Set background color */
+  color: #333; /* Set text color */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Result styles */
+#result {
+  color: #fff; /* Set text color */
+}
+
+/* Info styles */
+.info {
+  position: relative; /* Relative positioning */
+  display: grid; /* Display as grid */
+  grid-template-columns: 4fr 8fr; /* Set grid columns */
+  align-items: center; /* Align items vertically */
+  margin-top: 1.2em; /* Add top margin */
+}
+
+/* Poster styles */
+.poster {
+  width: 70%; /* Set poster width */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+/* Poster hover styles */
+.poster:hover {
+  transform: scale(1.1); /* Scale up poster on hover */
+}
+
+/* Heading styles */
+h2 {
+  text-align: center; /* Center text */
+  font-size: 24px; /* Set font size */
+  font-weight: 600; /* Set font weight */
+  letter-spacing: 1px; /* Set letter spacing */
+  color: #fff; /* Set text color */
+}
+
+/* Rating styles */
+.rating {
+  display: flex; /* Display as flex container */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Set gap between items */
+  margin: 15px 0; /* Add margin */
+}
+
+/* Rating heading styles */
+.rating h4 {
+  font-size: 20px; /* Set font size */
+  font-weight: 500; /* Set font weight */
+  color: #f9bc60; /* Set text color */
+}
+
+/* Details styles */
+.details {
+  display: flex; /* Display as flex container */
+  font-size: 16px; /* Set font size */
+  gap: 20px; /* Set gap between items */
+  justify-content: center; /* Center items horizontally */
+  color: #fff; /* Set text color */
+  margin: 10px 0; /* Add margin */
+  font-weight: 300; /* Set font weight */
+}
+
+/* Genre styles */
+.genre {
+  display: flex; /* Display as flex container */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Set gap between items */
+  flex-wrap: wrap; /* Wrap items */
+}
+
+/* Genre div styles */
+.genre div {
+  border: 1px solid #f9bc60; /* Set border */
+  font-size: 14px; /* Set font size */
+  padding: 8px 16px; /* Add padding */
+  border-radius: 5px; /* Apply border radius */
+  font-weight: 300; /* Set font weight */
+  color: #f9bc60; /* Set text color */
+  margin: 5px; /* Add margin */
+}
+
+/* Heading 3 styles */
+h3 {
+  font-weight: 500; /* Set font weight */
+  margin-top: 20px; /* Add top margin */
+  color: #f9bc60; /* Set text color */
+}
+
+/* Paragraph styles */
+p {
+  font-size: 16px; /* Set font size */
+  font-weight: 300; /* Set font weight */
+  line-height: 1.8em; /* Set line height */
+  text-align: justify; /* Justify text */
+  color: #fff; /* Set text color */
+}
+
+/* Message styles */
+.msg {
+  text-align: center; /* Center text */
+  color: #fff; /* Set text color */
+}
+
+/* Media queries */
+
+/* For small devices (e.g., phones) */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px; /* Adjust padding */
+  }
+  .search-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items */
+  }
+  .search-container input[type="text"] {
+    width: 100%; /* Set input width to 100% */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+  .footer {
+    padding: 20px 10px; /* Adjust padding */
+  }
+}
+
+/* For medium-sized devices (e.g., tablets) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    padding: 0 20px; /* Adjust padding */
+  }
+}
+
+/* For larger devices (e.g., desktops) */
+@media screen and (min-width: 993px) {
+  .container {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center container horizontally */
+  }
+}
+
+/* Footer styles */
+.footer {
+  position: fixed; /* Fixed positioning */
+  left: 0; /* Align to left */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Set width to 100% */
+  background-color: rgba(0, 0, 0, 0.05); /* Set background color */
+  text-align: center; /* Center text */
+}

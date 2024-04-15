@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log-in Page</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="Login_form1.css">
+    
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>   
+    </div>
+    <form id="login-form">
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="mail" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+
+        <button type="submit">Log In</button>
+    </form>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          var mail_id = document.getElementById('mail').value;
+          var password = document.getElementById('password').value;
+          pat1=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+          pat=/\W/;
+    
+          if(!pat1.test(mail_id)){
+            alert("Enter Valid email Id")
+          }
+    
+          if(password.length <= 8){
+            alert("Password must be strong...length>=8");
+            }
+          else if(pat.test(password)==0){
+            alert("Password must be strong...add one sp.char");
+            }
+          else{
+                // Simple authentication, replace with your own authentication logic
+                window.location.href = 'movie_catalogue.html'; // Redirect to movie_catalogue.html upon successful login
+            }
+          
+        });
+      </script>
+</body>
+</html>

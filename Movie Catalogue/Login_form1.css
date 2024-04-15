@@ -1,0 +1,156 @@
+/* Global reset */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body{
+    background-color: #080710; /* Set background color */
+}
+
+/* Background container styles */
+.background{
+    width: 430px; /* Set width */
+    height: 520px; /* Set height */
+    position: absolute; /* Absolute positioning */
+    transform: translate(-50%,-50%); /* Center horizontally and vertically */
+    left: 50%; /* Position from left */
+    top: 50%; /* Position from top */
+}
+
+/* Background shape styles */
+.background .shape{
+    height: 200px; /* Set height */
+    width: 200px; /* Set width */
+    position: absolute; /* Absolute positioning */
+    border-radius: 50%; /* Apply border radius to create circle */
+}
+
+/* First background shape styles */
+.shape:first-child{
+    background: linear-gradient(
+        #f3e305, /* Start color */
+        #eecc0b /* End color */
+    );
+    left: -80px; /* Position from left */
+    top: -80px; /* Position from top */
+}
+
+/* Last background shape styles */
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f, /* Start color */
+        #f7aa03 /* End color */
+    );
+    right: -30px; /* Position from right */
+    bottom: -80px; /* Position from bottom */
+}
+
+/* Form container styles */
+form{
+    height: 520px; /* Set height */
+    width: 400px; /* Set width */
+    background-color: rgba(255,255,255,0.13); /* Set background color with transparency */
+    position: absolute; /* Absolute positioning */
+    transform: translate(-50%,-50%); /* Center horizontally and vertically */
+    top: 50%; /* Position from top */
+    left: 50%; /* Position from left */
+    border-radius: 10px; /* Apply border radius */
+    backdrop-filter: blur(10px); /* Apply backdrop filter */
+    border: 2px solid rgba(255,255,255,0.1); /* Set border */
+    box-shadow: 0 0 40px rgba(8,7,16,0.6); /* Apply box shadow */
+    padding: 50px 35px; /* Add padding */
+}
+
+/* Form element styles */
+form *{
+    font-family: 'Poppins',sans-serif; /* Set font family */
+    color: #ffffff; /* Set text color */
+    letter-spacing: 0.5px; /* Set letter spacing */
+    outline: none; /* Remove outline */
+    border: none; /* Remove border */
+}
+
+/* Form heading styles */
+form h3{
+    font-size: 32px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    line-height: 42px; /* Set line height */
+    text-align: center; /* Center text */
+}
+
+/* Label styles */
+label{
+    display: block; /* Display as block element */
+    margin-top: 30px; /* Add top margin */
+    font-size: 16px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+}
+
+/* Input styles */
+input{
+    display: block; /* Display as block element */
+    height: 50px; /* Set height */
+    width: 100%; /* Set width */
+    background-color: rgba(255,255,255,0.07); /* Set background color with transparency */
+    border-radius: 3px; /* Apply border radius */
+    padding: 0 10px; /* Add padding */
+    margin-top: 8px; /* Add top margin */
+    font-size: 14px; /* Set font size */
+    font-weight: 300; /* Set font weight */
+}
+
+/* Placeholder styles */
+::placeholder{
+    color: #e5e5e5; /* Set placeholder color */
+}
+
+/* Button styles */
+button{
+    margin-top: 50px; /* Add top margin */
+    width: 100%; /* Set width */
+    background-color: #ffffff; /* Set background color */
+    color: #080710; /* Set text color */
+    padding: 15px 0; /* Add padding */
+    font-size: 18px; /* Set font size */
+    font-weight: 600; /* Set font weight */
+    border-radius: 5px; /* Apply border radius */
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Social container styles */
+.social{
+  margin-top: 30px; /* Add top margin */
+  display: flex; /* Display as flex container */
+}
+
+/* Social button container styles */
+.social div{
+  background: red; /* Set background color */
+  width: 150px; /* Set width */
+  border-radius: 3px; /* Apply border radius */
+  padding: 5px 10px 10px 5px; /* Add padding */
+  background-color: rgba(255,255,255,0.27); /* Set background color with transparency */
+  color: #eaf0fb; /* Set text color */
+  text-align: center; /* Center text */
+}
+
+/* Hover styles for social button */
+.social div:hover{
+  background-color: rgba(255,255,255,0.47); /* Change background color on hover */
+}
+
+/* Facebook button styles */
+.social .fb{
+  margin-left: 25px; /* Add left margin */
+}
+
+/* Icon styles */
+.social i{
+  margin-right: 4px; /* Add right margin */
+}
